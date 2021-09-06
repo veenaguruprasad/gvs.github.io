@@ -1,8 +1,13 @@
 let c= document.getElementById("my_canvas");
 let ctx=c.getContext("2d");
-let img=new Image();
-img.onload=function()=>{
+let loadimg=(src,callback)=>{
+    img.onload=()=>callback(img);
+    img.src=src;
+};
+
+loadimg("/mar.png",(img)=>{
     ctx.drawImage(img,0,0,500,500);
+});
 
 
 
@@ -10,4 +15,4 @@ img.onload=function()=>{
 
 
 };
-img.src = "mar.png";
+img.src = "/mar.png";
