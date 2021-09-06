@@ -10,4 +10,4 @@ img.onload=function()=>{
 
 
 };
-img.src = 'https://www.tutorialspoint.com/images/seaborn-4.jpg?v=2';
+img.src = "mar.png";
